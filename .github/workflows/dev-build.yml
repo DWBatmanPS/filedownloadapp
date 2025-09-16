@@ -43,7 +43,7 @@ jobs:
 
       - name: Test GET request with curl
         run: |
-          RESPONSE=$(curl -k -o /dev/null -w "%{​​http_code" https://localhost:8443/)
+          RESPONSE=$(curl -k -o /dev/null -w "%{​​http_code}" https://localhost:8443/)
           echo "Response: $RESPONSE"
           EXPECTED_RESPONSE='200'
           if [ "$RESPONSE" != "$EXPECTED_RESPONSE" ]; then

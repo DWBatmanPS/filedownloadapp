@@ -1,0 +1,29 @@
+{
+  "name": "filedownloadapp",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "An application that will run a slow file download to the client",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DWBatmanPS/filedownloadapp.git"
+  },
+  "keywords": [
+    "download"
+  ],
+  "bugs": {
+    "url": "https://github.com/DWBatmanPS/filedownloadapp/issues"
+  },
+  "homepage": "https://github.com/DWBatmanPS/filedownloadapp#readme"
+}

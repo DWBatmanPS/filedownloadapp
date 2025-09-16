@@ -1,5 +1,7 @@
 import dotenv from "dotenv";
-import express from "express"
+import express from "express";
+import { dirname } from "path"; 
+import fs from "fs";
 import http from "http";
 import https from "https";
 
@@ -7,6 +9,7 @@ dotenv.config(); // Load environment variables from .env file
 
 const httpPort = process.env.PORTHTTP || 8080; // Default to 80 if PORTHTTP is not set
 const httpsPort = process.env.PORTHTTPS || 8443; // Default to 443 if PORTHTTPS is not set
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 

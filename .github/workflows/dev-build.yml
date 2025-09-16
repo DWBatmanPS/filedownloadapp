@@ -43,7 +43,7 @@ jobs:
 
       - name: Test GET request with curl
         run: |
-          RESPONSE=$(curl -k https://localhost:8443/ -w"%{​​http_code}"\)
+          RESPONSE=$(curl -k https://localhost:8443/ -w "%{​​http_code}")
           echo "Response: $RESPONSE"
           EXPECTED_RESPONSE='200'
           if [ "$RESPONSE" != "$EXPECTED_RESPONSE" ]; then
@@ -73,8 +73,7 @@ jobs:
 
       - name: Test POST request with curl (HTTP)
         run: |
-          POST_BODY='{"message":"Hello, World!"}'
-          RESPONSE=$(curl -k http://localhost:8080/ -w"%{​​http_code}"\)
+          RESPONSE=$(curl -k http://localhost:8080/ -w "%{​​http_code}")
           echo "Response: $RESPONSE"
           EXPECTED_RESPONSE='200'
           if [ "$RESPONSE" != "$EXPECTED_RESPONSE" ]; then

@@ -18,7 +18,7 @@ const app = express();
 
 // Settings
 const FILE_SIZE = 50 * 1024 * 1024; // 50 MB
-const DURATION = 70 * 1000; // 60 seconds in ms
+const DURATION = 130 * 1000; // 60 seconds in ms
 const CHUNK_SIZE = 64 * 1024; // 64 KB
 
 

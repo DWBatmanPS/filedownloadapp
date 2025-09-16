@@ -11,6 +11,6 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
-EXPOSE 8s443
+EXPOSE 8443
 
 CMD [ "node", "index.js" ]
